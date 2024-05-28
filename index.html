@@ -8,12 +8,17 @@
 </head>
 
 <body>
-    <!--link  vuejs -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">
+        <ol v-if="emails.length === 10">
+            <li v-for="(email, index) in emails">{{email.response}}</li>
+        </ol>
+    </div>
+    <!--link vue js -->
+   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- axios -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- link js -->
-  <script src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
